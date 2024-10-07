@@ -12,7 +12,9 @@ return {
         hide_dotfiles = false, -- Do not hide dotfiles (files starting with a .)
         hide_gitignored = false, -- Show git ignored files as well (optional)
       },
-      follow_current_file = true, -- Focus on the current file in the tree
+      follow_current_file = {
+        enabled = true,
+      }, -- Focus on the current file in the tree
       group_empty_dirs = true, -- Group empty directories together
       -- You can also add other filtering options if needed
     },
