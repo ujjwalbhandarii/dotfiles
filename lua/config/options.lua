@@ -3,3 +3,7 @@
 -- Add any additional options here
 
 vim.opt.winbar = "%=%m %f"
+vim.opt.smartindent = true
+vim.opt.wrap = true
+vim.opt.backspace = { "start", "eol", "indent" }
+vim.opt.wildignore:append({ "*/node_modules/*" })
