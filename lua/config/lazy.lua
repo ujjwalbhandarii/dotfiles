@@ -49,8 +49,37 @@ require("lazy").setup({
     -- Pretty TypeScript errors
     { "folke/trouble.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },
 
-    -- Tailwind snippets
-    { "EmmanuelMess/tailwindcss-snippets.nvim" }, -- Tailwind CSS snippets
+    -- Tailwind CSS integration
+    { "themaxmarchuk/tailwindcss-colors.nvim", config = true },
+
+    -- Autocompletion setup for Tailwind CSS using nvim-cmp
+    { "hrsh7th/nvim-cmp" },
+    { "hrsh7th/cmp-nvim-lsp" },
+    { "hrsh7th/cmp-buffer" },
+    { "neovim/nvim-lspconfig" },
+    { "williamboman/mason.nvim" }, -- LSP installer
+    { "williamboman/mason-lspconfig.nvim" }, -- Bridges mason and lspconfig
+
+    -- LSP setup for Tailwind CSS
+    {
+      "neovim/nvim-lspconfig",
+      config = function()
+        require("lspconfig").tailwindcss.setup({
+          settings = {
+            tailwindCSS = {
+              experimental = {
+                classRegex = {
+                  "tw`([^`]*)", -- tw`...`
+                  'tw="([^"]*)', -- tw="..."
+                  'tw={"([^"}]*)', -- tw={"..."}
+                  "tw\\.\\w+`([^`]*)", -- tw.xxx`...`
+                },
+              },
+            },
+          },
+        })
+      end,
+    },
 
     -- import/override with your plugins
     { import = "plugins" },
