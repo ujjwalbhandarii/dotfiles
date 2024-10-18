@@ -21,7 +21,7 @@ require("lazy").setup({
       colorscheme = "vscode",
     } },
 
-    -- Language support and snippets
+    { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
@@ -35,19 +35,9 @@ require("lazy").setup({
     -- Prisma language support
     { "pantharshit00/vim-prisma" },
 
-    -- Angular syntax support
-    { "jose-elias-alvarez/nvim-lsp-ts-utils", dependencies = { "neovim/nvim-lspconfig" } },
-    { "iamcco/markdown-preview.nvim", ft = { "markdown" }, build = "cd app && npm install" },
-
     -- Git integration and Git history
     { "tpope/vim-fugitive" }, -- Git integration
     { "junegunn/gv.vim" }, -- Git history
-
-    -- Path intellisense
-    { "hrsh7th/cmp-path" }, -- Autocompletion for file paths
-
-    -- Pretty TypeScript errors
-    { "folke/trouble.nvim", dependencies = { "kyazdani42/nvim-web-devicons" } },
 
     -- Tailwind CSS integration
     { "themaxmarchuk/tailwindcss-colors.nvim", config = true },
