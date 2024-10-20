@@ -8,8 +8,25 @@ return {
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
 
+		-- Define a function to attach custom key mappings
+		local function on_attach(bufnr)
+			local api = require("nvim-tree.api")
+
+			local function opts(desc)
+				return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+			end
+
+			-- Default mappings, feel free to modify or remove as needed
+			vim.keymap.set("n", "l", api.node.open.edit, opts("Open"))
+			vim.keymap.set("n", "h", api.node.navigate.parent_close, opts("Close Directory"))
+			vim.keymap.set("n", "v", api.node.open.vertical, opts("Open: Vertical Split"))
+		end
+
 		nvimtree.setup({
+
+			on_attach = on_attach, -- Attach the custom key mappings
 			view = {
+
 				width = 60,
 				relativenumber = true,
 				side = "right",
