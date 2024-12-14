@@ -38,6 +38,7 @@ return {
 				"prismals",
 				"pyright",
 				"typescript-language-server",
+				"gopls",
 			},
 		})
 

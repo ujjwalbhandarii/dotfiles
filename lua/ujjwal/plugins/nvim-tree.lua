@@ -22,6 +22,7 @@ return {
 			vim.keymap.set("n", "v", api.node.open.vertical, opts("Open: Vertical Split"))
 			vim.keymap.set("n", "a", api.fs.create, opts("Create File"))
 			vim.keymap.set("n", "r", api.fs.rename, opts("Rename File"))
+			vim.keymap.set("n", "d", api.fs.remove, opts("Delete file"))
 		end
 
 		nvimtree.setup({
