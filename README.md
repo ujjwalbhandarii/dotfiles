@@ -1,6 +1,6 @@
 # `.config` Repository
 
-This repository contains my personal configuration files for **Neovim** and **tmux**. These configurations are designed to enhance productivity and maintain a clean, centralized setup.
+This repository contains my personal configuration files for **Neovim** and **tmux**. These configurations are created to maintain a clean, centralized setup.
 
 ---
 
