@@ -17,7 +17,7 @@ Follow the steps below to clone this repository and set up the configurations fo
 
 ### Step 1: Clone the Repository
 
-Clone this repository into the `~/.config` directory:
+Clone this repository:
 
 ```bash
 git clone https://github.com/ujjwalbhandarii/.config
