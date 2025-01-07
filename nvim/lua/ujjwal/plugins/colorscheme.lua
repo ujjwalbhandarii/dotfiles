@@ -4,7 +4,6 @@ return {
 	config = function()
 		local transparent = false
 
-		-- color scheme resembling ChatGPT dark mode
 		local bg = "#1e1e2e" -- Deep grayish background
 		local bg_dark = "#181825" -- Slightly darker gray for contrasts
 		local bg_highlight = "#2b2b40" -- Muted gray-blue for highlights
