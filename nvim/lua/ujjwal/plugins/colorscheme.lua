@@ -4,15 +4,16 @@ return {
 	config = function()
 		local transparent = false
 
-		local bg = "#011628"
-		local bg_dark = "#011423"
-		local bg_highlight = "#143652"
-		local bg_search = "#0A64AC"
-		local bg_visual = "#275378"
-		local fg = "#CBE0F0"
-		local fg_dark = "#B4D0E9"
-		local fg_gutter = "#627E97"
-		local border = "#547998"
+		-- color scheme resembling ChatGPT dark mode
+		local bg = "#1e1e2e" -- Deep grayish background
+		local bg_dark = "#181825" -- Slightly darker gray for contrasts
+		local bg_highlight = "#2b2b40" -- Muted gray-blue for highlights
+		local bg_search = "#3e497a" -- Deep indigo for search highlights
+		local bg_visual = "#3b4261" -- Muted blue-gray for visuals
+		local fg = "#d9e0ee" -- Soft light grayish text
+		local fg_dark = "#a6adc8" -- Muted light gray for secondary text
+		local fg_gutter = "#5c5f70" -- Darker gray for gutter
+		local border = "#414868" -- Muted blue-gray for borders
 
 		require("tokyonight").setup({
 			style = "night",
