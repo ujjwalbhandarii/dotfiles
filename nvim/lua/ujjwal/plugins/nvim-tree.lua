@@ -29,7 +29,6 @@ return {
 
 			on_attach = on_attach, -- Attach the custom key mappings
 			view = {
-
 				width = 60,
 				relativenumber = true,
 				side = "right",
