@@ -1,4 +1,4 @@
-# `.config` Repository
+# `dotfiles` Repository
 
 This repository contains my personal configuration files for **Neovim** and **tmux**. These configurations are created to maintain a clean, centralized setup.
 
