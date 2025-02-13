@@ -1,4 +1,4 @@
 return {
-  "akinsho/bufferline.nvim",
+  "rcarriga/nvim-notify",
   enabled = false,
 }
