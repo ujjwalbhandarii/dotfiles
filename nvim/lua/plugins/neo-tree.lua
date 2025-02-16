@@ -1,7 +1,26 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
+      default_component_configs = {
+        icon = {
+          folder_closed = "", -- Folder closed icon
+          folder_open = "", -- Folder open icon
+          folder_empty = "", -- Empty folder icon
+          default = "", -- Default file icon
+          file = {
+            ["txt"] = "", -- Text file icon
+            ["md"] = "", -- Markdown file icon
+            ["js"] = "", -- JavaScript file icon
+            ["lua"] = "", -- Lua file icon
+            ["py"] = "", -- Python file icon
+            ["html"] = "", -- HTML file icon
+            ["css"] = "", -- CSS file icon
+          },
+          highlight = "NeoTreeFileIcon",
+        },
+      },
       filesystem = {
         filtered_items = {
           hide_dotfiles = false,
@@ -10,6 +29,7 @@ return {
       },
       window = {
         position = "right",
+        width = 55,
         mappings = {
           ["J"] = function(state)
             local tree = state.tree

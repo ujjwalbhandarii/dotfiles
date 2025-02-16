@@ -49,6 +49,11 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 
 vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#d8bd92" })
 
+vim.cmd([[
+  highlight NeoTreeFileIcon guifg=#0000FF  -- Change to blue
+  highlight NeoTreeFolderIcon guifg=#0000FF -- Change to blue
+]])
+
 vim.filetype.add({
   extension = {
     mdx = "mdx",
