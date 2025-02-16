@@ -1,12 +1,9 @@
 return {
   "numToStr/Comment.nvim",
   opts = {
-    -- add any options here
     toggler = {
-      ---Line-comment toggle keymap
-      line = "<leader>cc",
-      ---Block-comment toggle keymap
-      block = "<leader>bc",
+      line = "<leader>cc",  ---Line-comment toggle keymap
+      block = "<leader>bc", ---Block-comment toggle keymap
     },
   },
   lazy = false,
