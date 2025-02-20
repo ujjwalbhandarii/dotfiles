@@ -13,7 +13,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 -- join lines
 vim.keymap.set("n", "J", "mzJ`z")
 
--- chatgpt
+-- CHATGPT
 vim.keymap.set("n", "<leader>gp", "<cmd>ChatGPT<cr>", { desc = "Launch ChatGPT" })
 vim.keymap.set("n", "<leader>gpa", "<cmd>ChatGPTActAs<cr>", { desc = "ChatGPT Act As" })
 vim.keymap.set("n", "<leader>gpe", "<cmd>ChatGPTEditWithInstructions<cr>", { desc = "ChatGPT Edit With Instructions" })
