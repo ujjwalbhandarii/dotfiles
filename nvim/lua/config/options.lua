@@ -1,6 +1,12 @@
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 
+-- Text wrapping settings
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.textwidth = 30
+vim.opt.formatoptions:append("t")
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 2
@@ -8,7 +14,6 @@ vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
-vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
