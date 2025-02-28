@@ -1,0 +1,20 @@
+gui:
+  # Show borders around panels
+  border: rounded
+  showIcons: true
+  theme:
+    activeBorderColor:
+      - cyan
+      - bold
+    inactiveBorderColor:
+      - white
+    optionsTextColor:
+      - blue
+    selectedLineBgColor:
+      - reverse
+    unstagedChangesColor:
+      - red
+  commitLength:
+    show: true
+    max: 72
+  nerdFontsVersion: "3"
