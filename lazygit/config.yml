@@ -16,5 +16,4 @@ gui:
       - red
   commitLength:
     show: true
-    max: 72
   nerdFontsVersion: "3"
