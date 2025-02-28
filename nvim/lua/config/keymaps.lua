@@ -1,4 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 
 vim.keymap.set("n", "U", "<c-u>zz")
@@ -21,6 +20,7 @@ vim.keymap.set("n", "<leader>gpc", "<cmd>ChatGPTCompleteCode<cr>", { desc = "Cha
 vim.keymap.set("n", "<leader>gpf", "<cmd>ChatGPTRun fix_bugs<cr>", { desc = "ChatGPT Fix Bugs" })
 vim.keymap.set("n", "<leader>gpx", "<cmd>ChatGPTRun explain_code<cr>", { desc = "ChatGPT Fix Bugs" })
 
+-- Keymaps are automatically loaded on the VeryLazy event
 -- markdown
 vim.keymap.set(
   "n",
