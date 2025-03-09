@@ -8,6 +8,6 @@ return {
 		{ "<leader>z", "<cmd>ZenMode<cr>", desc = "Toggle Zen Mode" },
 	},
 	window = {
-		width = 50,
+		width = 80,
 	},
 }

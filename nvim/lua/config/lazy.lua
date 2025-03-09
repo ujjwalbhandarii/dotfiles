@@ -18,26 +18,32 @@ vim.opt.swapfile = false
 
 require("lazy").setup({
 	spec = {
-		-- Add LazyVim and import its plugins
-		{ "LazyVim/LazyVim", import = "lazyvim.plugins" },
-		-- Import any extra modules here
-		-- { import = "lazyvim.plugins.extras.lang.typescript" },
-		-- { import = "lazyvim.plugins.extras.lang.json" },
-		-- { import = "lazyvim.plugins.extras.ui.mini-animate" },
-		-- Import/override with your plugins
+		{
+			"LazyVim/LazyVim",
+			import = "lazyvim.plugins",
+			-- opts = {
+			-- 	colorscheme = "sonokai",
+			-- 	news = {
+			-- 		lazyvim = true,
+			-- 		neovim = true,
+			-- 	},
+			-- },
+		},
+		{ import = "lazyvim.plugins.extras.linting.eslint" },
+		{ import = "lazyvim.plugins.extras.formatting.prettier" },
+		{ import = "lazyvim.plugins.extras.lang.typescript" },
+		{ import = "lazyvim.plugins.extras.lang.json" },
+		{ import = "lazyvim.plugins.extras.lang.tailwind" },
+		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 		{ import = "plugins" },
 	},
 	defaults = {
-		-- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
 		lazy = false,
-		-- It's recommended to leave version=false for now, since a lot of the plugins that support versioning
-		-- have outdated releases, which may break your Neovim install.
-		version = false, -- always use the latest git commit
+		version = false,
 	},
 	checker = { enabled = true }, -- Automatically check for plugin updates
 	performance = {
 		rtp = {
-			-- Disable some runtime path plugins to improve performance
 			disabled_plugins = {
 				"gzip",
 				"tarPlugin",
@@ -47,4 +53,5 @@ require("lazy").setup({
 			},
 		},
 	},
+	debug = false,
 })
