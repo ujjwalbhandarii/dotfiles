@@ -7,4 +7,7 @@ return {
 	keys = {
 		{ "<leader>z", "<cmd>ZenMode<cr>", desc = "Toggle Zen Mode" },
 	},
+	window = {
+		width = 50,
+	},
 }
