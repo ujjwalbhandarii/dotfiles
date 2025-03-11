@@ -6,8 +6,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-PATH=~/.console-ninja/.bin:$PATH
-
 [ -s "/home/ujjwal/.bun/_bun" ] && source "/home/ujjwal/.bun/_bun"
 
 # bun
