@@ -4,13 +4,13 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git)
 
+alias vim=nvim
 source $ZSH/oh-my-zsh.sh
-
-[ -s "/home/ujjwal/.bun/_bun" ] && source "/home/ujjwal/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/home/ujjwal/.bun/_bun" ] && source "/home/ujjwal/.bun/_bun"
 
 # go
 export GOROOT=/usr/local/go
