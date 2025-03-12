@@ -18,6 +18,7 @@ vim.opt.swapfile = false
 
 require("lazy").setup({
 	spec = {
+		{ import = "plugins" },
 		{
 			"LazyVim/LazyVim",
 			import = "lazyvim.plugins",
@@ -25,7 +26,6 @@ require("lazy").setup({
 				colorscheme = "tokyonight-night",
 			},
 		},
-		{ import = "plugins" },
 		{ import = "lazyvim.plugins.extras.lang.json" },
 		{ import = "lazyvim.plugins.extras.lang.tailwind" },
 		{ import = "lazyvim.plugins.extras.linting.eslint" },
