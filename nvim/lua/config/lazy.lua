@@ -13,12 +13,8 @@ end
 
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
--- Disable swap files
-vim.opt.swapfile = false
-
 require("lazy").setup({
 	spec = {
-		{ import = "plugins" },
 		{
 			"LazyVim/LazyVim",
 			import = "lazyvim.plugins",
@@ -32,6 +28,7 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.lang.typescript" },
 		{ import = "lazyvim.plugins.extras.formatting.prettier" },
 		{ import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+		{ import = "plugins" },
 	},
 	defaults = {
 		lazy = false,
