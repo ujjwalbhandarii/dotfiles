@@ -3,7 +3,9 @@ return {
 	dependencies = {
 		"folke/neodev.nvim", -- Better Lua setup
 		"creativenull/efmls-configs-nvim", -- For advanced linting/formatting
+		"jose-elias-alvarez/typescript.nvim",
 	},
+
 	opts = {
 		servers = {
 			tsserver = {
@@ -54,7 +56,9 @@ return {
 		setup = {
 			tsserver = function(_, opts)
 				require("lspconfig").tsserver.setup(opts)
-				require("typescript").setup({ disable_commands = false })
+				require("typescript").setup({
+					disable_commands = false,
+				})
 			end,
 		},
 	},
