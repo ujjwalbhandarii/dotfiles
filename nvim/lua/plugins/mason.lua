@@ -5,7 +5,6 @@ return {
 			ensure_installed = {
 				-- LSPs
 				"pyright",
-				"tsserver",
 				"html",
 				"cssls",
 				"jsonls",
@@ -19,6 +18,8 @@ return {
 				"stylua",
 				"eslint_d",
 				"flake8",
+				"ruff-lsp", -- Python linter
+				"mypy", -- Static type checker
 			},
 		},
 	},
@@ -26,7 +27,6 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
 			ensure_installed = {
-				"tsserver",
 				"pyright",
 				"html",
 				"cssls",
@@ -34,6 +34,7 @@ return {
 				"tailwindcss",
 				"lua_ls",
 				"marksman",
+				"ruff",
 			},
 			automatic_installation = true,
 		},
