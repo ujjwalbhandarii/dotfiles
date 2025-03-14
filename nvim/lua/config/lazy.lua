@@ -49,4 +49,7 @@ require("lazy").setup({
 		},
 	},
 	debug = false,
+	change_detection = {
+		notify = false,
+	},
 })
