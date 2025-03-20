@@ -13,9 +13,3 @@ keymap.set("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 keymap.set("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 keymap.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 keymap.set("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
-
--- Keymaps for switching tabs
-vim.api.nvim_set_keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
-
--- go to the definition
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, { noremap = true, silent = true })
