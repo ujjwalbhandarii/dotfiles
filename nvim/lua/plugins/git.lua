@@ -1,5 +1,4 @@
 return {
-	-- Git Integration
 	{
 		"lewis6991/gitsigns.nvim",
 		event = "BufReadPre",
@@ -8,7 +7,6 @@ return {
 			sign_priority = 9,
 		},
 	},
-
 	{
 		"sindrets/diffview.nvim",
 		cmd = { "DiffviewOpen", "DiffviewClose" },
